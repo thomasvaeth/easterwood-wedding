@@ -1,0 +1,122 @@
+//--------------------------------------------
+// Colors
+//--------------------------------------------
+// .color-alpha {
+//   color: $color-alpha;
+// }
+
+// .bg-alpha {
+//   background-color: $color-alpha;
+// }
+
+// .bg-white {
+//   background-color: $color-white;
+// }
+
+// .bg-grey {
+//   background-color: $color-grey;
+// }
+
+// .bg-black {
+//   background-color: $color-black;
+// }
+
+//--------------------------------------------
+// Sections
+//--------------------------------------------
+section {
+  position: relative;
+}
+
+.section-padding {
+  padding: 2em 1em;
+
+  @media (min-width: $mq-small) {
+    padding: 4em 2em;
+  }
+
+  @media (min-width: $mq-med) {
+    padding: 6em 3em;
+  }
+
+  @media (min-width: $mq-large) {
+    padding: 8em 4em;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    padding: 10em 5em;
+  }
+}
+
+// .section-padding--no-bottom {
+//   padding: {
+//     top: 2em;
+//     right: 1em;
+//     left: 1em;
+//   }
+
+//   @media (min-width: $mq-small) {
+//     padding: {
+//       top: 4em;
+//     }
+//   }
+
+//   @media (min-width: $mq-xlarge) {
+//     padding-top: 6em;
+//   }
+// }
+
+// .section-header {
+//   overflow: hidden;
+
+//   span {
+//     // @include nth-transition-delay();
+
+//     display: inline-block;
+
+//     // opacity: 0;
+//     // transform: translate3d(0, 100%, 0);
+//     // transition-property: opacity, transform;
+//     // transition-duration: 1s;
+//     // transition-timing-function: ease-in-out;
+//   }
+
+//   // &.aos-animate {
+
+//   //   span {
+//   //     opacity: 1;
+//   //     transform: translate3d(0, 0, 0);
+//   //   }
+//   // }
+// }
+
+//--------------------------------------------
+// Grid
+//--------------------------------------------
+.grid {
+  @extend %auto-margin;
+
+  max-width: $max-width;
+
+  @media (min-width: $mq-med) {
+    width: 65%;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    width: 50%;
+  }
+}
+
+.grid-large {
+  @extend %auto-margin;
+
+  max-width: $max-width--lg;
+
+  @media (min-width: $mq-med) {
+    width: 80%;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    width: 65%;
+  }
+}

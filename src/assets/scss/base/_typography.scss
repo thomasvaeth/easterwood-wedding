@@ -1,0 +1,145 @@
+//----------------------------------------------
+// Headers
+//----------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  margin: {
+    top: 0;
+    bottom: 0;
+  }
+
+  font-family: $font-header;
+  font-weight: 400;
+}
+
+//----------------------------------------------
+// H1 theme
+//----------------------------------------------
+h1, %font-h1 {
+  $fontSize: 4.75em;
+
+  font-size: $fontSize - 1.25em;
+  line-height: 1.1;
+
+  @media (min-width: $mq-small) {
+    font-size: $fontSize;
+  }
+
+  @media (min-width: $mq-med) {
+    font-size: $fontSize + 0.25em;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    font-size: $fontSize + 0.5em;
+  }
+}
+
+//----------------------------------------------
+// H2 theme
+//----------------------------------------------
+h2, %font-h2 {
+  $fontSize: 2em;
+
+  font-size: $fontSize - 0.5em;
+  line-height: 1.1;
+
+  @media (min-width: $mq-med) {
+    font-size: $fontSize;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    font-size: $fontSize + 0.25em;
+  }
+}
+
+//----------------------------------------------
+// H3 theme
+//----------------------------------------------
+// h3, %font-h3 {
+//   $fontSize: $font-xxsmall;
+
+//   @extend %text-center;
+
+//   font-size: $fontSize - 0.1em;
+//   text-transform: uppercase;
+//   letter-spacing: 0.2em;
+//   line-height: 1.4;
+
+//   @media (min-width: $mq-med) {
+//     font-size: $fontSize;
+//   }
+
+//   @media (min-width: $mq-xlarge) {
+//     font-size: $fontSize + 0.1em;
+//   }
+// }
+
+//----------------------------------------------
+// H4 theme
+//----------------------------------------------
+// h4, %font-h4 {
+//   @extend %text-center;
+
+//   margin-bottom: 0.5em;
+
+//   font-size: 1.25em;
+//   line-height: 1.4;
+// }
+
+//----------------------------------------------
+// Paragraphs
+//----------------------------------------------
+// p {
+//   margin-top: 0;
+//   margin-bottom: 0.75em;
+// }
+
+//----------------------------------------------
+// Quotes
+//----------------------------------------------
+// q, blockquote {
+//   margin: 2em 0;
+
+//   font-family: $font;
+//   font-weight: 900;
+//   font-style: normal;
+
+//   p {
+//     margin: 0;
+//   }
+// }
+
+// cite {
+//   @extend %heavy-spacing;
+
+//   display: block;
+//   margin-top: 1em;
+
+//   font-family: $font;
+//   font-size: 1em;
+//   font-style: normal;
+
+//   // &:before {
+//   //   content: "\2014 \0020";
+//   // }
+// }
+
+//----------------------------------------------
+// Misc
+//----------------------------------------------
+// ul, li {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// address {
+//   font-style: normal;
+// }
+
+//----------------------------------------------
+// Selection
+//----------------------------------------------
+::selection {
+  color: $color-white;
+  background: $color-black;
+  text-shadow: none;
+}

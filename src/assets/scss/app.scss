@@ -1,0 +1,58 @@
+//----------------------------------------------
+//  Main Styling Build
+//
+//  Tools:      Configs, variables, extends, mixins
+//  Base:       Styles for base level elements
+//  Vendor:     Vendor specific styles
+//  Regions:    Main layouts
+//  Components: Modular components -> Most styles
+//  Utils:      Helper classes, utilities, animations
+//----------------------------------------------
+
+//----------------------------------------------
+// Tools: Main Config & Global Variables
+//----------------------------------------------
+@import 'tools/_config';
+
+//----------------------------------------------
+// Tools: Mixins
+//----------------------------------------------
+@import 'tools/_mixins';
+
+//----------------------------------------------
+// Tools: Extends
+//----------------------------------------------
+@import 'tools/_extends';
+
+//----------------------------------------------
+// Vendor: Normalize
+//----------------------------------------------
+@import 'base/_normalizer';
+
+//----------------------------------------------
+// Base
+//----------------------------------------------
+@import 'base/_fluid-sizes';
+@import 'base/_links';
+@import 'base/_media';
+@import 'base/_typography';
+
+//----------------------------------------------
+// Vendor
+//----------------------------------------------
+
+//----------------------------------------------
+// Regions
+//----------------------------------------------
+
+//----------------------------------------------
+// Components
+//----------------------------------------------
+@import 'components/_mast';
+
+//----------------------------------------------
+// Utils
+//----------------------------------------------
+@import 'utils/_animations-keyframes';
+@import 'utils/_decor';
+@import 'utils/_helpers';

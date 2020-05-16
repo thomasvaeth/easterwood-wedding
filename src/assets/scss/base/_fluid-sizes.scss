@@ -1,0 +1,38 @@
+//----------------------------------------------
+// Base typography
+//----------------------------------------------
+body {
+  font-family: $font-body;
+  font-weight: 400;
+  line-height: $base-lineheight;
+  color: $color-alpha;
+  background-color: $color-beta;
+
+  @media (min-width: $mq-small) {
+    font-size: 102.5%;
+  }
+
+  @media (min-width: $mq-med) {
+    font-size: 105%;
+  }
+
+  @media (min-width: $mq-large) {
+    font-size: 107.5%;
+  }
+
+  @media (min-width: 75em) {
+    font-size: 110%;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    font-size: 115%;
+  }
+
+  @media (min-width: $mq-xxlarge) {
+    font-size: 120%;
+  }
+
+  @media (min-width: $mq-xxxlarge) {
+    font-size: 125%;
+  }
+}

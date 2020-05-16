@@ -1,0 +1,27 @@
+//----------------------------------------------
+// Overlay
+//----------------------------------------------
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-999;
+
+  height: 100%;
+  width: 100%;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  &__subcontainer {
+    height: 25vh;
+
+    opacity: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
