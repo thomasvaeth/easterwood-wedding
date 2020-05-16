@@ -1,25 +1,13 @@
 //--------------------------------------------
 // Colors
 //--------------------------------------------
-// .color-alpha {
-//   color: $color-alpha;
-// }
+.bg-alpha {
+  background-color: $color-alpha;
+}
 
-// .bg-alpha {
-//   background-color: $color-alpha;
-// }
-
-// .bg-white {
-//   background-color: $color-white;
-// }
-
-// .bg-grey {
-//   background-color: $color-grey;
-// }
-
-// .bg-black {
-//   background-color: $color-black;
-// }
+.bg-beta {
+  background-color: $color-beta;
+}
 
 //--------------------------------------------
 // Sections
@@ -47,24 +35,6 @@ section {
     padding: 10em 5em;
   }
 }
-
-// .section-padding--no-bottom {
-//   padding: {
-//     top: 2em;
-//     right: 1em;
-//     left: 1em;
-//   }
-
-//   @media (min-width: $mq-small) {
-//     padding: {
-//       top: 4em;
-//     }
-//   }
-
-//   @media (min-width: $mq-xlarge) {
-//     padding-top: 6em;
-//   }
-// }
 
 // .section-header {
 //   overflow: hidden;
@@ -99,7 +69,7 @@ section {
   max-width: $max-width;
 
   @media (min-width: $mq-med) {
-    width: 65%;
+    width: 55%;
   }
 
   @media (min-width: $mq-xlarge) {
@@ -107,16 +77,16 @@ section {
   }
 }
 
-.grid-large {
-  @extend %auto-margin;
+// .grid-large {
+//   @extend %auto-margin;
 
-  max-width: $max-width--lg;
+//   max-width: $max-width--lg;
 
-  @media (min-width: $mq-med) {
-    width: 80%;
-  }
+//   @media (min-width: $mq-med) {
+//     width: 80%;
+//   }
 
-  @media (min-width: $mq-xlarge) {
-    width: 65%;
-  }
-}
+//   @media (min-width: $mq-xlarge) {
+//     width: 65%;
+//   }
+// }

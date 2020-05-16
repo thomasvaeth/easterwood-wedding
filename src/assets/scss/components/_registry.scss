@@ -1,0 +1,17 @@
+//----------------------------------------------
+// Registry
+//----------------------------------------------
+.registry {
+  &__link {
+    display: block;
+
+    text-align: center;
+
+    span {
+      @extend %font-h1;
+
+      font-family: $font-header;
+      color: $color-beta;
+    }
+  }
+}

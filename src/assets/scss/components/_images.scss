@@ -2,20 +2,25 @@
 // Images
 //----------------------------------------------
 .images {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
+  &__container {
+    margin-bottom: 1em;
 
-  & > figure {
-    visibility: hidden;
-    opacity: 0;
+    @media (min-width: $mq-med) {
+      display: flex;
+    }
 
-    &.js-visible {
-      visibility: visible;
-      opacity: 1;
+    & > figure {
+      &:first-child {
+        @media (min-width: $mq-med) {
+          margin-right: 0.5em;
+        }
+      }
+
+      &:last-child {
+        @media (min-width: $mq-med) {
+          margin-left: 0.5em;
+        }
+      }
     }
   }
 }

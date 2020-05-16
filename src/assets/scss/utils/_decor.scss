@@ -1,11 +1,10 @@
 //----------------------------------------------
 // Sep
 //----------------------------------------------
-// .sep {
-//   height: 1px;
-//   max-width: $mq-small;
-//   margin: 0 auto;
+.sep {
+  height: 1px;
+  margin: 0 auto;
 
-//   border: 0;
-//   background-color: rgba($color-black, 0.1);
-// }
+  border: 0;
+  background-color: $color-alpha;
+}
