@@ -28,4 +28,26 @@
       }
     }
   }
+
+  &__link-container {
+    margin-bottom: 4em;
+    text-align: center;
+
+    @media (min-width: $mq-small) {
+      margin-bottom: 6em;
+    }
+
+    @media (min-width: $mq-med) {
+      margin-bottom: 8em;
+    }
+
+    @media (min-width: $mq-xlarge) {
+      margin-bottom: 10em;
+    }
+  }
+
+  &__link {
+    @include link-underline(4px, $color-alpha);
+    @extend %font-h1;
+  }
 }
