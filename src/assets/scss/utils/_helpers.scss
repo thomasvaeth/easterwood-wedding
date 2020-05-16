@@ -17,17 +17,13 @@ section {
 }
 
 .section-padding {
-  padding: 2em 1em;
+  padding: 4em 1em;
 
   @media (min-width: $mq-small) {
-    padding: 4em 2em;
-  }
-
-  @media (min-width: $mq-med) {
     padding: 6em 3em;
   }
 
-  @media (min-width: $mq-large) {
+  @media (min-width: $mq-med) {
     padding: 8em 4em;
   }
 

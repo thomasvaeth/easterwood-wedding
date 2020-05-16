@@ -11,8 +11,13 @@
 
     & > figure {
       &:first-child {
+        margin-bottom: 1em;
+
         @media (min-width: $mq-med) {
-          margin-right: 0.5em;
+          margin: {
+            right: 0.5em;
+            bottom: 0;
+          }
         }
       }
 

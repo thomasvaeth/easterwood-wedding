@@ -2,6 +2,14 @@
 // Mast
 //----------------------------------------------
 .mast {
+  br {
+    display: none;
+
+    @media (min-width: $mq-med) {
+      display: block;
+    }
+  }
+
   &__img {
     margin-top: 1em;
 
