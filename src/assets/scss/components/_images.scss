@@ -24,6 +24,44 @@
       &:last-child {
         @media (min-width: $mq-med) {
           margin-left: 0.5em;
+
+          img {
+            transition-delay: 200ms;
+          }
+        }
+      }
+    }
+
+    &--reverse {
+      @media (min-width: $mq-med) {
+        flex-direction: row-reverse;
+      }
+
+      & > figure {
+        &:first-child {
+          @media (min-width: $mq-med) {
+            margin: {
+              right: 0;
+              left: 0.5em;
+            }
+
+            img {
+              transition-delay: 200ms;
+            }
+          }
+        }
+
+        &:last-child {
+          @media (min-width: $mq-med) {
+            margin: {
+              right: 0.5em;
+              left: 0;
+            }
+
+            img {
+              transition-delay: 0s;
+            }
+          }
         }
       }
     }

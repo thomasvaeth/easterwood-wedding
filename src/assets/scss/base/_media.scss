@@ -13,6 +13,15 @@ figure {
 img {
   display: block;
   width: 100%;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+
+  &.fade-in {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 //----------------------------------------------
