@@ -16,7 +16,7 @@ function html() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 }
 
 function styles() {
@@ -25,7 +25,7 @@ function styles() {
     .pipe(autoprefixer({cascade: false}))
     .pipe(cleanCSS())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./dist/assets/css'));
 }
 
 function fonts() {
@@ -33,7 +33,7 @@ function fonts() {
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./dist/assets/css'));
 }
 
 function scripts() {
@@ -44,7 +44,7 @@ function scripts() {
     .pipe(buffer())
     .pipe(uglify())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('./assets/js'));
+    .pipe(gulp.dest('./dist/assets/js'));
 }
 
 function watch() {
@@ -53,8 +53,11 @@ function watch() {
   gulp.watch('./src/assets/js/**/*.js', scripts);
 }
 
-const build = gulp.series(html, styles, scripts, watch);
-gulp.task('default', build);
+const develop = gulp.series(html, styles, scripts, watch);
+gulp.task('default', develop);
+
+const build = gulp.series(html, gulp.parallel(fonts, styles), scripts);
+gulp.task('build', build);
 
 exports.html = html;
 exports.styles = styles;

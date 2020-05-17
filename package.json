@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "gulp build": "gulp build"
   },
   "author": {
     "name": "Thomas Vaeth",
