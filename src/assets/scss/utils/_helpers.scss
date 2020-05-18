@@ -5,10 +5,6 @@
   background-color: $color-alpha;
 }
 
-.bg-beta {
-  background-color: $color-beta;
-}
-
 //--------------------------------------------
 // Sections
 //--------------------------------------------
@@ -32,6 +28,34 @@ section {
   }
 }
 
+.section-padding--horiz {
+  padding: {
+    right: 1em;
+    left: 1em;
+  }
+
+  @media (min-width: $mq-small) {
+    padding: {
+      right: 3em;
+      left: 3em;
+    }
+  }
+
+  @media (min-width: $mq-med) {
+    padding: {
+      right: 4em;
+      left: 4em;
+    }
+  }
+
+  @media (min-width: $mq-xlarge) {
+    padding: {
+      right: 5em;
+      left: 5em;
+    }
+  }
+}
+
 //--------------------------------------------
 // Grid
 //--------------------------------------------
@@ -48,17 +72,3 @@ section {
     width: 50%;
   }
 }
-
-// .grid-large {
-//   @extend %auto-margin;
-
-//   max-width: $max-width--lg;
-
-//   @media (min-width: $mq-med) {
-//     width: 80%;
-//   }
-
-//   @media (min-width: $mq-xlarge) {
-//     width: 65%;
-//   }
-// }
