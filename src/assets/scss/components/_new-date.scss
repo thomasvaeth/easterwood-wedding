@@ -1,0 +1,85 @@
+//----------------------------------------------
+// New Date
+//----------------------------------------------
+.new-date {
+  height: 50vh;
+  overflow: hidden;
+
+  @media (min-width: $mq-med) {
+    height: 100vh;
+    min-height: 46em;
+  }
+
+  &__img-container,
+  &__text-container {
+    position: absolute;
+  }
+
+  &__img-container {
+    top: 3em;
+    left: 1em;
+    bottom: 3em;
+    right: 1em;
+
+    @media (min-width: $mq-small) {
+      left: 3em;
+      right: 3em;
+    }
+
+    @media (min-width: $mq-med) {
+      left: 4em;
+      right: 4em;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__marquee {
+    overflow: hidden;
+  }
+
+  &__submarquee {
+    display: flex;
+    width: fit-content;
+
+    transform: translate3d(calc(-25% + 20vw), 0, 0);
+    animation: marquee 12s linear infinite;
+
+    &--reverse {
+      transform: translate3d(calc(-50% + 20vw), 0, 0);
+      animation: marquee 12s linear infinite reverse;
+    }
+
+    & > span {
+      padding: {
+        right: 2vw;
+        left: 2vw;
+      }
+
+      font-family: $font-body;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 23vh;
+      line-height: 1.1;
+      white-space: nowrap;
+      -webkit-text-stroke: 1px $color-alpha;
+      -webkit-text-fill-color: transparent;
+
+      @media (min-width: $mq-med) {
+        font-size: unquote("max(21em, 45vh)");
+      }
+    }
+  }
+}
+
+//----------------------------------------------
+// Marquee
+//----------------------------------------------
+@keyframes marquee {
+  0% { transform: translate3d(calc(-25% + 20vw), 0, 0); }
+  100% { transform: translate3d(calc(-50% + 20vw), 0, 0); }
+}
