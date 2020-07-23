@@ -7,7 +7,7 @@
 
   @media (min-width: $mq-med) {
     height: 100vh;
-    min-height: 46em;
+    min-height: 36em;
   }
 
   &__img-container,
@@ -70,7 +70,7 @@
       -webkit-text-fill-color: transparent;
 
       @media (min-width: $mq-med) {
-        font-size: unquote("max(21em, 45vh)");
+        font-size: unquote("max(16em, 45vh)");
       }
     }
   }
