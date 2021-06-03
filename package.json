@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "gulp": "gulp",
-    "gulp build": "gulp build"
+    "build": "gulp build"
   },
   "author": {
     "name": "Thomas Vaeth",
