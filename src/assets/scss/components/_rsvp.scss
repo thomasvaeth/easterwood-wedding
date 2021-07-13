@@ -1,0 +1,29 @@
+//----------------------------------------------
+// Party
+//----------------------------------------------
+.rsvp {
+  position: fixed;
+  z-index: 999;
+  top: 1em;
+  right: 1em;
+
+  @media (min-width: $mq-small) {
+    right: 3em;
+  }
+
+  @media (min-width: $mq-med) {
+    right: 4em;
+  }
+
+  @media (min-width: $mq-xlarge) {
+    right: 5em;
+  }
+
+  &__link {
+    @include link-underline(2px, $color-alpha);
+
+    font-weight: 700;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}
